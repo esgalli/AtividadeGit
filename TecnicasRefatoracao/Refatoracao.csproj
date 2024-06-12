@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Aula01\**" />
+    <Compile Remove="Aula02\**" />
+    <Compile Remove="Aula03\**" />
+    <Compile Remove="Aula06\R13.InlineClass\**" />
+    <Compile Remove="R32.DecomposeConditional\**" />
+    <Compile Remove="R33.ConsolidateConditionalExpression\**" />
+    <Compile Remove="R35.RemoveControlFlag\**" />
+    <Compile Remove="R36.ReplaceNestedConditional\**" />
+    <Compile Remove="R39.IntroduceAssertion\**" />
+    <Compile Remove="R40.RenameMethod\**" />
+    <Compile Remove="RefatOO\**" />
+    <EmbeddedResource Remove="Aula01\**" />
+    <EmbeddedResource Remove="Aula02\**" />
+    <EmbeddedResource Remove="Aula03\**" />
+    <EmbeddedResource Remove="Aula06\R13.InlineClass\**" />
+    <EmbeddedResource Remove="R32.DecomposeConditional\**" />
+    <EmbeddedResource Remove="R33.ConsolidateConditionalExpression\**" />
+    <EmbeddedResource Remove="R35.RemoveControlFlag\**" />
+    <EmbeddedResource Remove="R36.ReplaceNestedConditional\**" />
+    <EmbeddedResource Remove="R39.IntroduceAssertion\**" />
+    <EmbeddedResource Remove="R40.RenameMethod\**" />
+    <EmbeddedResource Remove="RefatOO\**" />
+    <None Remove="Aula01\**" />
+    <None Remove="Aula02\**" />
+    <None Remove="Aula03\**" />
+    <None Remove="Aula06\R13.InlineClass\**" />
+    <None Remove="R32.DecomposeConditional\**" />
+    <None Remove="R33.ConsolidateConditionalExpression\**" />
+    <None Remove="R35.RemoveControlFlag\**" />
+    <None Remove="R36.ReplaceNestedConditional\**" />
+    <None Remove="R39.IntroduceAssertion\**" />
+    <None Remove="R40.RenameMethod\**" />
+    <None Remove="RefatOO\**" />
+  </ItemGroup>
+
+</Project>
