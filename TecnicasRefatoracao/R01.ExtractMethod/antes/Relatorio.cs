@@ -18,7 +18,7 @@ namespace refatoracao.Aula01.R01.ExtractMethod.antes
 
             // imprimir itens
             Console.WriteLine("*****************************");
-            Console.WriteLine("********** Itens ************");
+            Console.WriteLine("********** Itens do Pedido ************");
             Console.WriteLine("*****************************");
             foreach (var item in pedido.Itens)
             {
@@ -29,7 +29,7 @@ namespace refatoracao.Aula01.R01.ExtractMethod.antes
 
             // imprimir detalhes
             Console.WriteLine("*****************************");
-            Console.WriteLine("********** Resumo************");
+            Console.WriteLine("********** Resumo do Pedido ************");
             Console.WriteLine("*****************************");
             Console.WriteLine("nome: " + pedido.Cliente);
             Console.WriteLine("valor: " + total);
