@@ -27,5 +27,4 @@ namespace TecnicasRefatoracao.R01.ExtractMethod
         {
             itens.Add(new Item(descricao, quantidade, precoBase, acrescimo, desconto));
         }
-    }
 }

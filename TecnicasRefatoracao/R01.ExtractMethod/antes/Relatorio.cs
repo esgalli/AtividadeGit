@@ -14,23 +14,25 @@ namespace refatoracao.Aula01.R01.ExtractMethod.antes
             var pedido = new Pedido("José da Silva");
             pedido.AddItem("Dentozap", 2, 10m, 0m, 3m);
             pedido.AddItem("Voldax", 3, 10m, 0m, 3m);
+            pedido.AddItem("Magnopyrol", 7, 19m, 0m, 3m);
             pedido.AddItem("Tranlab", 7, 10m, 0m, 3m);
+            pedido.AddItem("Omeprazol", 8, 98m, 0m, 3m);
 
             // imprimir itens
-            Console.WriteLine("*****************************");
-            Console.WriteLine("********** Itens ************");
-            Console.WriteLine("*****************************");
+            Console.WriteLine("***************************************");
+            Console.WriteLine("********** Itens do Pedido ************");
+            Console.WriteLine("***************************************");
             foreach (var item in pedido.Itens)
             {
                 decimal valorItem = item.Quantidade * item.PrecoBase;
-                Console.WriteLine($"{item.Desconto}: {item.Quantidade} unidades, R$ {valorItem}");
+                Console.WriteLine($"{item.Desconto}: {item.Quantidade} Unidades, R$ {valorItem}");
                 total = total + valorItem;
             }
 
             // imprimir detalhes
-            Console.WriteLine("*****************************");
-            Console.WriteLine("********** Resumo************");
-            Console.WriteLine("*****************************");
+            Console.WriteLine("****************************************");
+            Console.WriteLine("********** Resumo do Pedido ************");
+            Console.WriteLine("****************************************");
             Console.WriteLine("nome: " + pedido.Cliente);
             Console.WriteLine("valor: " + total);
         }
