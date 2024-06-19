@@ -5,12 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using refatoracao.Aula01.R01.ExtractMethod.antes;
 
-namespace TecnicasRefatoracao.R01.ExtractMethod
+namespace TecnicasRefatoracao.R01.ExtractMethod.antes
 {
-    class Pedido
+    public class Pedido
     {
         private readonly IList<Item> itens = new List<Item>();
-        public IReadOnlyCollection<Item> Itens
+        IReadOnlyCollection<Item> Itens 
         {
             get { return new ReadOnlyCollection<Item>(itens); }
         }
@@ -27,4 +27,6 @@ namespace TecnicasRefatoracao.R01.ExtractMethod
         {
             itens.Add(new Item(descricao, quantidade, precoBase, acrescimo, desconto));
         }
+    }
+
 }
