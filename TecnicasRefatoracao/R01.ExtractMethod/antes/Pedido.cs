@@ -1,12 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Threading.Tasks;
-using refatoracao.Aula01.R01.ExtractMethod.antes;
-
-namespace TecnicasRefatoracao.R01.ExtractMethod
+namespace Refatoracao.R01.ExtractMethod.antes
 {
+    public class Pedido
+    {
+        
+    }
+}
+
     class Pedido
     {
         private readonly IList<Item> itens = new List<Item>();
@@ -27,4 +26,4 @@ namespace TecnicasRefatoracao.R01.ExtractMethod
         {
             itens.Add(new Item(descricao, quantidade, precoBase, acrescimo, desconto));
         }
-}
+    }
